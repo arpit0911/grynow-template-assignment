@@ -24,11 +24,18 @@ header {
   /* border: 1px solid red; */
   padding: 1rem;
 }
+@media screen and (max-width: 480px) {
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
 
 header ul a {
   text-decoration: none;
   margin-left: 0.5rem;
   color: black;
+  font-weight: bold;
 }
 header ul a:active {
   color: var(--primary);
@@ -55,7 +62,7 @@ header ul a:active {
 
 .home-section-content {
   position: absolute;
-  left: 20%;
+  left: 18%;
   color: white;
   max-width: 40%;
   /* width: 35%; */
